@@ -1,5 +1,8 @@
 import { ChangeEvent, FormEvent, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import iconList from '../../assets/1_nsfwsm/icon-list.svg'
+import heroDesktop from '../../assets/1_nsfwsm/illustration-sign-up-desktop.svg'
+import heroMobile from '../../assets/1_nsfwsm/illustration-sign-up-mobile.svg'
 
 const emailRegexp = new RegExp(/[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+/)
 
@@ -40,10 +43,10 @@ const SignUp = () => {
         <picture>
           <source
             media='(min-width: 768px)'
-            srcSet='/src/assets/1_nsfwsm/illustration-sign-up-desktop.svg'
+            srcSet={heroDesktop}
           />
           <img
-            src='/src/assets/1_nsfwsm/illustration-sign-up-mobile.svg'
+            src={heroMobile}
             alt='hero'
             className='w-full md:h-full md:w-auto md:max-w-[300px] object-cover'
           />
@@ -57,15 +60,15 @@ const SignUp = () => {
           </p>
           <ul>
             <li className='flex gap-4 items-start pb-2'>
-              <img src='/src/assets/1_nsfwsm/icon-list.svg' alt='check' /> Product
+              <img src={iconList} alt='check' /> Product
               discovery and building what matters
             </li>
             <li className='flex gap-4 items-start pb-2'>
-              <img src='/src/assets/1_nsfwsm/icon-list.svg' alt='check' />
+              <img src={iconList} alt='check' />
               Measuring to ensure updates are a success
             </li>
             <li className='flex gap-4 items-start pb-2'>
-              <img src='/src/assets/1_nsfwsm/icon-list.svg' alt='check' />
+              <img src={iconList} alt='check' />
               And much more!
             </li>
           </ul>

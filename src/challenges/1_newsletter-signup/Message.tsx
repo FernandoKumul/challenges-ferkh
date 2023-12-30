@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom'
+import iconSuccess from '../../assets/1_nsfwsm/icon-success.svg'
 
 const Message = () => {
   const navigate = useNavigate()
@@ -8,7 +9,7 @@ const Message = () => {
       <div className='bg-White h-full flex flex-col px-6 pb-10 justify-end gap-16 sm:h-max sm:w-[60%] md:w-1/2 xl:w-[28%] sm:px-8 sm:py-10 sm:rounded-3xl sm:gap-6'>
         <div className='flex-grow flex flex-col justify-center'>
         <img
-          src='/src/assets/1_nsfwsm/icon-success.svg'
+          src={iconSuccess}
           alt='success'
           className='w-14 mb-10 sm:mb-6'
         />
