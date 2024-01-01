@@ -1,9 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
       colors: {
@@ -16,13 +13,18 @@ export default {
         'very-dark-magenta': 'hsl(300, 43%, 22%)',
         'soft-pink': 'hsl(333, 80%, 67%)',
         'dark-grayish-magenta': 'hsl(303, 10%, 53%)',
-        'light-grayish-magenta': 'hsl(300, 24%, 96%)'
+        'light-grayish-magenta': 'hsl(300, 24%, 96%)',
+
+        'dark-cyan': 'hsl(185, 75%, 39%)',
+        'very-dark-desaturated-blue': 'hsl(229, 23%, 23%)',
+        'dark-grayish-blue': 'hsl(227, 10%, 46%)',
+        'dark-gray': 'hsl(0, 0%, 59%)',
       },
       fontFamily: {
-        'league-spartan': ['League Spartan']
-      }
+        'league-spartan': ['League Spartan'],
+        'kumbh-sans': ['Kumbh Sans'],
+      },
     },
   },
   plugins: [],
 }
-
